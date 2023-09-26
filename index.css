@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(gameb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.dino{
+    background: url(bd.gif);
+    background-size: cover;
+    width: 125px;
+    height: 130px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 75px;
+    left: 50px;
+}
+.rev{
+    transform: scaleX(-1);
+}
+
+
+.obstacle{
+    background: url(dra.gif);
+    background-size: cover;
+    width: 210px;
+    height: 130px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 75px;
+    left: 660px;
+}
+.gameover{
+   font-weight: bold;
+    font-size: 1.8rem;
+    position: absolute;
+    color: black;
+    font-family: monospace;
+    top: 6%;
+    left: 35%;
+}
+.scoreCount{
+    border: 1px solid black;
+    width: 145px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    font-family: cursive;
+    font-weight: 900;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    border-radius: 3px;
+}
+
+
+.obstacleAni{
+    animation: obsAni 8s linear infinite;
+}
+
+.dinoAnimate{
+    animation: dino 0.6s linear;
+}
+@keyframes dino {
+    0%{
+        bottom: 75x;
+    }
+    50%{
+        bottom: 350px;
+    }
+    100%{
+        bottom: 75x;
+    }
+}
+
+@keyframes obsAni {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+
+.sun{
+    background: url(sun.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 1%;
+    left: 900px;
+}
+.sunAni{
+    animation: sun 24s linear infinite;
+}
+@keyframes sun {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+.clouds{
+    background: url(cloo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 8%;
+    left: 700px;
+}
+.cloAni{
+    animation: clo 27s linear infinite;
+}
+@keyframes clo {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+.birds{
+    background: url(birds.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 90px;
+    position: absolute;
+    top: 10%;
+    left: 400px;
+}
+.birAni{
+    animation: bird 20s linear infinite;
+}
+@keyframes bird {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+@media  screen and (max-width :330px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        background: url(gameb.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:relative;
+    }
+    .dino{
+        background: url(bd.gif);
+        background-size: cover;
+        width: 80px;
+        height: 85px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 75px;
+        left: 20px;
+    }
+    .obstacle{
+        background: url(dra.gif);
+        background-size: cover;
+        width: 150px;
+        height: 100px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 75px;
+        left: 200px;
+    }
+    .gameover{
+        font-weight: bold;
+         font-size: 1.2rem;
+         position: absolute;
+         color: black;
+         font-family: monospace;
+         top: 8%;
+         left: 25%;
+    }
+    .scoreCount{
+        border: 1px solid black;
+        width: 135px;
+        padding: 0px 5px;
+        color: black;
+        background-color: white;
+        font-family: cursive;
+        font-weight: 900;
+        position: absolute;
+        right: 2%;
+        top: 1%;
+        border-radius: 3px;
+    }
+    .obstacleAni{
+        animation: obsAni 6s linear infinite;
+    }
+    
+    .dinoAnimate{
+        animation: dino 0.6s linear;
+    }
+    @keyframes dino {
+        0%{
+            bottom: 75x;
+            
+        }
+        50%{
+            bottom: 250px;
+            
+        }
+        100%{
+            bottom: 75x;
+            
+        }
+    }
+    
+    @keyframes obsAni {
+        0%{
+            left: 100vw;
+        }
+        100%{
+            left: -10vw;
+        }
+    }
+    
+    
+}
